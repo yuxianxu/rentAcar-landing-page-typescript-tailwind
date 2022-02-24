@@ -5,7 +5,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
 import { Button } from '../button';
 import { Marginer } from '../marginer';
@@ -88,14 +88,20 @@ const DateCalendar = styled(Calendar)`
   position: absolute;
   max-width: none;
   user-select: none;
-  top: 2.5em;
-  left: -2;
+  top: 2em;
+  left: 0;
+
+  ${({ offset }: any) =>
+    offset &&
+    css`
+      left: -6em;
+    `}
 
   @media (min-width: ${SCREENS.md}) {
     top: 3.5em;
     left: -2em;
   }
-`;
+` as any;
 
 export function BookCard() {
   const [startDate, setStartDate] = useState<Date>(new Date());
@@ -143,7 +149,11 @@ export function BookCard() {
           />
         </SmallIcon>
         {isReturnCalendarOpen && (
-          <DateCalendar value={returnDate} onChange={setReturnDate as any} />
+          <DateCalendar
+            offset
+            value={returnDate}
+            onChange={setReturnDate as any}
+          />
         )}
       </ItemContainer>
       <Marginer direction="horizontal" margin="2em" />
