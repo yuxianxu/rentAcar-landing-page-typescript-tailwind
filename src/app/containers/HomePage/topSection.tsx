@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 import MclarenCarImg from '../../../assets/images/mclaren-orange-big.png';
 import BlobImg from '../../../assets/images/blob.svg';
 import { SCREENS } from '../../components/responsive';
+import { Button } from '../../components/button';
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
@@ -17,7 +18,7 @@ const TopSectionContainer = styled.div`
     pr-3
     lg:pl-12
     lg:pr-12
- `}
+ `};
 `;
 
 const LeftContainer = styled.div`
@@ -25,8 +26,7 @@ const LeftContainer = styled.div`
    w-1/2
    flex
    flex-col
-
-`}
+`};
 `;
 const RightContainer = styled.div`
   ${tw`
@@ -42,7 +42,7 @@ const Slogan = styled.h1`
   ${tw`
       font-bold
       text-2xl
-      xl: text-6xl
+      xl:text-6xl
       sm:text-3xl
       md:text-5xl
       lg:font-black
@@ -52,7 +52,7 @@ const Slogan = styled.h1`
       sm:leading-snug
       lg:leading-normal
       xl:leading-relaxed
-   `}
+   `};
 `;
 
 const Description = styled.p`
@@ -64,7 +64,7 @@ const Description = styled.p`
       overflow-hidden
       max-h-12
       text-gray-800
-   `}
+   `};
 `;
 
 const BlobContainer = styled.div`
@@ -94,7 +94,7 @@ const BlobContainer = styled.div`
     max-height: 30em;
     right: -7em;
     top: -15em;
-    transform: rotate(-25deg);
+    transform: rotate(-30deg);
   }
   @media (min-width: ${SCREENS.xl}) {
     width: 70em;
@@ -123,16 +123,24 @@ const StandaloneCar = styled.div`
     right: -6em;
     top: -6em;
   }
-  @media (min-width: ${SCREENS.sm}) {
+  @media (min-width: ${SCREENS.lg}) {
     height: 21em;
     right: -8em;
     top: -5em;
   }
-  @media (min-width: ${SCREENS.sm}) {
+  @media (min-width: ${SCREENS.xl}) {
     height: 30em;
-    right: -12em;
-    top: -9em;
+    right: -13em;
+    top: -6em;
   }
+`;
+
+const ButtonsContainer = styled.div`
+  ${tw`
+      flex
+      flex-wrap
+      mt-4
+`}
 `;
 
 export function TopSection() {
@@ -142,7 +150,13 @@ export function TopSection() {
         <Slogan>Rent The Best Quality Car's With Us</Slogan>
         <Description>
           Always choose the best car from our local stores or order it remotely
+          at the best price for you and get the best quality cars for as long as
+          you like
         </Description>
+        <ButtonsContainer>
+          <Button text="Book Your Ride" />
+          <Button theme="filled" text="Sell Your car" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
