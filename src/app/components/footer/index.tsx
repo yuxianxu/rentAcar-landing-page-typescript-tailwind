@@ -14,6 +14,7 @@ const FootContainer = styled.div`
     pt-4
     md:pt-12
     pb-6
+    pl-8
     items-center
     justify-center   
     md:pb-11
