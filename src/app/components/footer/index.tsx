@@ -149,8 +149,10 @@ const BottomInfoContainer = styled.div`
   ${tw`
     flex
     flex-col
+    md:justify-start
     md:flex-wrap
     md:flex-row
+    md:w-full
   `}
 `;
 const BottomLinksContainer = styled.div`
