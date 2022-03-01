@@ -7,6 +7,7 @@ import { Marginer } from '../../components/marginer';
 import { Navbar } from '../../components/navbar';
 import { AboutUs } from './aboutUs';
 import BookingSteps from './bookingSteps';
+import ScrollToTop from './scrollToTop';
 import { TopCars } from './topCars';
 import { TopSection } from './topSection';
 
@@ -30,6 +31,7 @@ export function HomePage() {
       <BookCard />
       <Marginer direction="vertical" margin="10em" />
       <BookingSteps />
+      <ScrollToTop />
       <Marginer direction="vertical" margin="8em" />
       <AboutUs />
       <Marginer direction="vertical" margin="8em" />
