@@ -145,7 +145,7 @@ const ButtonsContainer = styled.div`
 
 export function TopSection() {
   return (
-    <TopSectionContainer>
+    <TopSectionContainer id='page-wrap'>
       <LeftContainer>
         <Slogan>Rent The Best Quality Car's With Us</Slogan>
         <Description>

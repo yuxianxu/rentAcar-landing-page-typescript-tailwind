@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
-import { scaleDown as Menu } from 'react-burger-menu';
+import { stack as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { SCREENS } from '../responsive';
 import menuStyles from './menuStyles';
@@ -58,6 +58,8 @@ export function NavItems() {
     return (
       <Menu
         isOpen={isOpen}
+        pageWrapId={"page-wrap"}
+        outerContainerId={ "outer-container" }
         onOpen={handleIsOpen}
         onClose={handleIsOpen}
         right
@@ -65,6 +67,11 @@ export function NavItems() {
       >
         
         <ListContainer>
+          <NavItem menu>
+            <a  href="/#top" onClick={closeSideBar}>
+              Home
+            </a>
+          </NavItem>
           <NavItem menu>
             <a  href="/#about" onClick={closeSideBar}>
               About

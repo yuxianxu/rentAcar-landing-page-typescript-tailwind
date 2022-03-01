@@ -25,7 +25,7 @@ const PageContainer = styled.div`
 
 export function HomePage() {
   return (
-    <PageContainer>
+    <PageContainer id='outer-container'>
       <Navbar />
       <TopSection />
       <Marginer direction="vertical" margin="4em" />
