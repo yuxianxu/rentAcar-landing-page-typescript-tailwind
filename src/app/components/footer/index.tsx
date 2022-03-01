@@ -18,6 +18,7 @@ const FootContainer = styled.div`
     items-center
     justify-center   
     md:pb-11
+    -mb-9
     `}
 `;
 
@@ -167,6 +168,7 @@ const BottomContactContainer = styled.div`
     flex
     flex-col
     md:flex-row
+    
   `}
 `;
 

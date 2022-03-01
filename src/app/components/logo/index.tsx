@@ -10,10 +10,11 @@ interface ILogoProps {
   bgColor?: 'white' | 'dark';
 }
 
-const LogoContainer = styled.div`
+const LogoContainer = styled.a`
   ${tw`
         flex
-        items-center        
+        items-center
+        ml-2        
     `}
 `;
 
@@ -42,7 +43,7 @@ export function Logo(props: ILogoProps) {
   const { color, bgColor } = props;
 
   return (
-    <LogoContainer>
+    <LogoContainer href='/'>
       <Image>
         <img
           alt="car logo"

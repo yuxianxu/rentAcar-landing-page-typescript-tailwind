@@ -19,12 +19,13 @@ const PageContainer = styled.div`
         h-full
         items-center
         overflow-x-hidden
+        -mb-2
     `}
 `;
 
 export function HomePage() {
   return (
-    <PageContainer>
+    <PageContainer id='outer-container'>
       <Navbar />
       <TopSection />
       <Marginer direction="vertical" margin="4em" />
