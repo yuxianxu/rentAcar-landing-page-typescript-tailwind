@@ -7,6 +7,7 @@ import { Marginer } from '../../components/marginer';
 import { Navbar } from '../../components/navbar';
 import { AboutUs } from './aboutUs';
 import BookingSteps from './bookingSteps';
+import ScrollToTop from './scrollToTop';
 import { TopCars } from './topCars';
 import { TopSection } from './topSection';
 
@@ -35,6 +36,7 @@ export function HomePage() {
       <Marginer direction="vertical" margin="8em" />
       <TopCars />
       <Footer />
+      <ScrollToTop />
     </PageContainer>
   );
 }

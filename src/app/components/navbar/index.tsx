@@ -24,7 +24,7 @@ const LogoContainer = styled.div``;
 export function Navbar() {
   return (
     <NavbarContainer>
-      <LogoContainer>
+      <LogoContainer id='top'>
         <Logo />
       </LogoContainer>
       <NavItems />

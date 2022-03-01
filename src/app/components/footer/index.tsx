@@ -172,7 +172,7 @@ const BottomContactContainer = styled.div`
 
 export function Footer() {
   return (
-    <FootContainer>
+    <FootContainer id='contact'>
       <InnerContainer>
         <AboutContainer>
           <Logo color="white" bgColor="dark" />
@@ -252,6 +252,7 @@ export function Footer() {
           reserved.
         </CopyrightText>
       </BottomContainer>
+      
     </FootContainer>
   );
 }

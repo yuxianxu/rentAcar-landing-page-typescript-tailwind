@@ -1,7 +1,6 @@
 import {
   faCalendarAlt,
   faCarSide,
-  faMapMarked,
   faMapMarkedAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -95,7 +94,7 @@ const StepIcon = styled.span`
 
 export default function BookingSteps() {
   return (
-    <Container>
+    <Container id='services'>
       <Title>Our Working Steps</Title>
       <StepsContainer>
         <StepContainer>
