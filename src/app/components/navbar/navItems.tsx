@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
-import { slide as Menu } from 'react-burger-menu';
+import { scaleDown as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { SCREENS } from '../responsive';
 import menuStyles from './menuStyles';
@@ -26,7 +26,8 @@ const NavItem = styled.li<{ menu?: any }>`
         transition
         duration-300
         ease-in-out
-        hover:text-gray-700    
+        md:hover:text-gray-700    
+        hover:text-gray-400
     `}
   ${({ menu }) =>
     menu &&
@@ -43,21 +44,40 @@ const NavItem = styled.li<{ menu?: any }>`
 export function NavItems() {
   const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
+  const [isOpen, setOpen] = useState(false);
+
+  const handleIsOpen = () => {
+    setOpen(!isOpen);
+  };
+
+  const closeSideBar = () => {
+    setOpen(false);
+  };
+
   if (isMobile)
     return (
-      <Menu right styles={menuStyles}>
+      <Menu
+        isOpen={isOpen}
+        onOpen={handleIsOpen}
+        onClose={handleIsOpen}
+        right
+        styles={menuStyles}
+      >
+        
         <ListContainer>
           <NavItem menu>
-            <a href="/#about">About</a>
+            <a  href="/#about" onClick={closeSideBar}>
+              About
+            </a>
           </NavItem>
           <NavItem menu>
-            <a href="/#cars">Cars</a>
+            <a href="/#cars" onClick={closeSideBar}>Cars</a>
           </NavItem>
           <NavItem menu>
-            <a href="/#services">Services</a>
+            <a href="/#services" onClick={closeSideBar}>Services</a>
           </NavItem>
           <NavItem menu>
-            <a href="/#contact">Contact Us</a>
+            <a href="/#contact" onClick={closeSideBar}>Contact Us</a>
           </NavItem>
         </ListContainer>
       </Menu>

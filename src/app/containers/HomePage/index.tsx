@@ -19,6 +19,7 @@ const PageContainer = styled.div`
         h-full
         items-center
         overflow-x-hidden
+        -mb-2
     `}
 `;
 
