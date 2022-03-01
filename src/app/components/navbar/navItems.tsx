@@ -48,16 +48,16 @@ export function NavItems() {
       <Menu right styles={menuStyles}>
         <ListContainer>
           <NavItem menu>
-            <a href="#">Home</a>
+            <a href="/#about">About</a>
           </NavItem>
           <NavItem menu>
-            <a href="#">Cars</a>
+            <a href="/#cars">Cars</a>
           </NavItem>
           <NavItem menu>
-            <a href="#">Services</a>
+            <a href="/#services">Services</a>
           </NavItem>
           <NavItem menu>
-            <a href="#">Contact Us</a>
+            <a href="/#contact">Contact Us</a>
           </NavItem>
         </ListContainer>
       </Menu>
@@ -66,16 +66,16 @@ export function NavItems() {
   return (
     <ListContainer>
       <NavItem>
-        <a href="#">Home</a>
+        <a href="/#about">About</a>
       </NavItem>
       <NavItem>
-        <a href="#">Cars</a>
+        <a href="/#cars">Cars</a>
       </NavItem>
       <NavItem>
-        <a href="#">Services</a>
+        <a href="/#services">Services</a>
       </NavItem>
       <NavItem>
-        <a href="#">Contact Us</a>
+        <a href="/#contact">Contact Us</a>
       </NavItem>
     </ListContainer>
   );

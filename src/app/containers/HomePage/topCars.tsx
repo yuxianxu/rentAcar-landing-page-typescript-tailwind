@@ -82,7 +82,7 @@ export function TopCars() {
   const numberOfDots = Math.ceil(cars.length / 3);
 
   return (
-    <TopCarContainer>
+    <TopCarContainer id='cars'>
       <Title>Explore Our Top Deals</Title>
       <CarsContainer>
         <Carousel

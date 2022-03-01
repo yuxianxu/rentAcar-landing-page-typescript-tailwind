@@ -19,11 +19,10 @@ const Container = styled.a`
   text-4xl
   flex
   justify-end
-  w-full
   mr-10
-  mb-2
   sticky
-  top-0
+  w-full
+  bottom-6
     `}
 `;
 

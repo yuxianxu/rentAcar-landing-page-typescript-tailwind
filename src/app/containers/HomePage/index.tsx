@@ -31,12 +31,12 @@ export function HomePage() {
       <BookCard />
       <Marginer direction="vertical" margin="10em" />
       <BookingSteps />
-      <ScrollToTop />
       <Marginer direction="vertical" margin="8em" />
       <AboutUs />
       <Marginer direction="vertical" margin="8em" />
       <TopCars />
       <Footer />
+      <ScrollToTop />
     </PageContainer>
   );
 }
