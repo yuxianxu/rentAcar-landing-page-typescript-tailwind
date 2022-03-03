@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import tw from 'twin.macro';
-import { stack as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { SCREENS } from '../responsive';
 import menuStyles from './menuStyles';
 
 const ListContainer = styled.ul`
+  
   ${tw`
         flex
         list-none
+        border-none
     
     `}
 `;
@@ -36,7 +38,7 @@ const NavItem = styled.li<{ menu?: any }>`
       text-white
       text-xl
       mb-3
-      focus:text-white
+      // focus:text-white
     `}
     `}
 `;
@@ -88,6 +90,7 @@ export function NavItems() {
           </NavItem>
         </ListContainer>
       </Menu>
+      
     );
 
   return (

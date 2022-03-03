@@ -21,7 +21,7 @@ export default {
     },
     bmMenuWrap: {
       position: "fixed",
-      width: "60%",
+      width: "95%",
       height: "100%",
       top: "0px",
     },
