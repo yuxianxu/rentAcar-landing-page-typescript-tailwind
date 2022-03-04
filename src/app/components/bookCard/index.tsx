@@ -31,7 +31,8 @@ const CardContainer = styled.div`
         md:pt-2
         md:pb-2
         md:pl-9
-        md:pr-9    
+        md:pr-9
+        md:mt-20   
     `}
 `;
 

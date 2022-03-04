@@ -10,17 +10,19 @@ import { SCREENS } from '../../components/responsive';
 
 const TopCarContainer = styled.div`
   ${tw`
-        max-w-screen-lg
+        
         w-full
         flex
+        bg-red-50
         flex-col
         items-center
         justify-center
         pr-4
         pl-4
-        md:pl-0
-        md:pr-0
-        mb-10
+        pt-10
+        pb-10
+        md:pt-24
+        md:pb-24
     `}
 `;
 
@@ -39,8 +41,7 @@ const CarsContainer = styled.div`
         flex
         flex-wrap
         justify-center
-        mt-7
-        md:mt-10
+        mt-20
     `}
 `;
 
@@ -90,7 +91,7 @@ export function TopCars() {
           onChange={setCurrent}
           slides={cars}
           plugins={[
-            'clickToChange',
+            'arrows',
             {
               resolve: slidesToShowPlugin,
               options: {
@@ -101,6 +102,7 @@ export function TopCars() {
           breakpoints={{
             640: {
               plugins: [
+                'arrows',
                 {
                   resolve: slidesToShowPlugin,
                   options: {
@@ -111,6 +113,7 @@ export function TopCars() {
             },
             900: {
               plugins: [
+                'arrows',
                 {
                   resolve: slidesToShowPlugin,
                   options: {

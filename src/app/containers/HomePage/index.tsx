@@ -19,7 +19,6 @@ const PageContainer = styled.div`
         h-full
         items-center
         overflow-x-hidden
-        -mb-2
     `}
 `;
 
@@ -28,14 +27,16 @@ export function HomePage() {
     <PageContainer id='outer-container'>
       <Navbar />
       <TopSection />
-      <Marginer direction="vertical" margin="4em" />
+      {/* <Marginer direction="vertical" margin="2em" /> */}
       <BookCard />
-      <Marginer direction="vertical" margin="10em" />
+      <Marginer direction="vertical" margin="5em" />
       <BookingSteps />
-      <Marginer direction="vertical" margin="8em" />
+      <Marginer direction="vertical" margin="4em" />
       <AboutUs />
       <Marginer direction="vertical" margin="8em" />
       <TopCars />
+      {/* <Marginer direction="vertical" margin="8em" /> */}
+
       <Footer />
       <ScrollToTop />
     </PageContainer>

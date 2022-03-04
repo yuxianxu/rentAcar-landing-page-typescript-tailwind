@@ -11,7 +11,7 @@ const AboutUsContainer = styled.div`
         flex-wrap
         items-center
         justify-center
-        pt-4
+        pt-1
         pb-4
         pr-7
         pl-7
@@ -57,6 +57,7 @@ const Title = styled.h1`
   ${tw`
     text-black
     text-2xl
+    mb-6
     md:text-5xl
     font-extrabold
     md:font-black
@@ -85,11 +86,20 @@ export function AboutUs() {
         <Title>Fell the Best Experience with Our Rental Deals</Title>
         <InfoText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          </InfoText>
+          <InfoText>          
+          Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          aliquip ex ea commodo consequat. 
+          </InfoText>
+          <InfoText> 
+          Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          pariatur. 
+          </InfoText>
+          <InfoText> 
+          Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
           dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
