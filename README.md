@@ -6,12 +6,15 @@ RentAcar is a responsive landing page sample created by typescript and tailwind 
 
 [rentAcar](https://car-rent.vercel.app)
 
-## Technologies
+## Technologies and Skills
 
 - Typescript
 - React.js
 - Tailwind css
 - Responsive design
+- React-carousel
+- Hooks
+- Scroll up button
 - Deployment: Deploy web applications on servers like Vercel
  
 
