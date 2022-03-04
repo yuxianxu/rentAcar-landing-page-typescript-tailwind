@@ -7,8 +7,7 @@ import { SCREENS } from '../../components/responsive';
 import { Button } from '../../components/button';
 
 const TopSectionContainer = styled.div`
-  min-height: 400px;
-  margin-top: 6em;
+  min-height: 350px;
   ${tw`
     w-full
     max-w-screen-2xl
@@ -18,6 +17,9 @@ const TopSectionContainer = styled.div`
     pr-3
     lg:pl-12
     lg:pr-12
+    md:mb-20
+    md:mt-24
+    mt-12
  `};
 `;
 
@@ -62,7 +64,7 @@ const Description = styled.p`
       xl:text-lg
       sm:max-h-full
       overflow-hidden
-      max-h-12
+      max-h-16
       text-gray-800
    `};
 `;
@@ -77,9 +79,9 @@ const BlobContainer = styled.div`
   transform: rotate(-30deg);
 
   img {
-    width: 100%;
+    width: 120%;
     height: auto;
-    max-height: max-content;
+    // max-height: max-content;
   }
 
   @media (min-width: ${SCREENS.sm}) {
@@ -150,12 +152,12 @@ export function TopSection() {
         <Slogan>Rent The Best Quality Car's With Us</Slogan>
         <Description>
           Always choose the best car from our local stores or order it remotely
-          at the best price for you and get the best quality cars for as long as
-          you like
+          at the best price for you, and get the best quality cars for as long as
+          you like.
         </Description>
         <ButtonsContainer>
-          <Button text="Book Your Ride" />
-          <Button theme="filled" text="Sell Your car" />
+          {/* <Button text="" /> */}
+          <Button theme="filled" text="Book Your Ride " />
         </ButtonsContainer>
       </LeftContainer>
       <RightContainer>

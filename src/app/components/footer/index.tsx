@@ -39,6 +39,7 @@ const BottomContainer = styled.div`
     w-4/5
     max-w-screen-2xl
     justify-start
+    mb-6
   `}
 `;
 
@@ -46,7 +47,8 @@ const CopyrightText = styled.small`
   font-size: 11px;
   ${tw`
     text-gray-300
-    mt-5
+    mt-7
+    mb-3
   `}
 `;
 
@@ -168,13 +170,13 @@ const BottomContactContainer = styled.div`
     flex
     flex-col
     md:flex-row
-    
+       
   `}
 `;
 
 export function Footer() {
   return (
-    <FootContainer id='contact'>
+    <FootContainer id="contact">
       <InnerContainer>
         <AboutContainer>
           <Logo color="white" bgColor="dark" />
@@ -189,19 +191,19 @@ export function Footer() {
               <HeaderTitle>Our Links</HeaderTitle>
               <LinksList>
                 <ListItem>
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">About Us</a>
+                  <a href="/#about">About Us</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Services</a>
+                  <a href="/#service">Services</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Models</a>
+                  <a href="/#cars">Models</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Blog</a>
+                  <a href="/#about">Blog</a>
                 </ListItem>
               </LinksList>
             </SectionContainer>
@@ -209,19 +211,19 @@ export function Footer() {
               <HeaderTitle>Other Links</HeaderTitle>
               <LinksList>
                 <ListItem>
-                  <a href="#">FAQ</a>
+                  <a href="/">FAQ</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Contact Us</a>
+                  <a href="/">Contact Us</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Support</a>
+                  <a href="/">Support</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Privacy Policy</a>
+                  <a href="/">Privacy Policy</a>
                 </ListItem>
                 <ListItem>
-                  <a href="#">Terms {'&'} Conditions</a>
+                  <a href="/">Terms {'&'} Conditions</a>
                 </ListItem>
               </LinksList>
             </SectionContainer>
@@ -250,11 +252,9 @@ export function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright &copy; {new Date().getFullYear()} Yourcar. All rights
-          reserved.
+        Designed by&nbsp;<a href="https://www.yuxianxu.com">Yuxian Xu</a> &nbsp; Copyright &copy; {new Date().getFullYear()} rentAcar. 
         </CopyrightText>
       </BottomContainer>
-      
     </FootContainer>
   );
 }

@@ -11,13 +11,16 @@ import tw from 'twin.macro';
 const Container = styled.div`
   ${tw`
         w-full
+        bg-red-50
         flex
         flex-col
         items-center
-        pt-3
-        pb-3
-        lg:pt-6
-        lg:pb-6    
+        pt-8
+        pb-8
+
+        md:mt-16
+        md:pt-24
+        md:pb-24
     `}
 `;
 
@@ -37,6 +40,8 @@ const StepsContainer = styled.div`
         flex-wrap
         mt-7
         lg:mt-16
+        mt-16
+        md:mt-24
     
     `}
 `;
@@ -50,6 +55,8 @@ const StepContainer = styled.div`
         transition-colors
         hover:text-red-500
         m-3
+        mt-5
+
     `}
 `;
 

@@ -22,14 +22,14 @@ const NavItem = styled.li<{ menu?: any }>`
         md:text-base
         text-black
         font-medium
-        mr-1
+        mr-4
         md:mr-5
         cursor-pointer
         transition
         duration-300
         ease-in-out
-        md:hover:text-gray-700    
-        hover:text-gray-400
+        md:hover:text-red-400    
+        hover:text-red-400
     `}
   ${({ menu }) =>
     menu &&
