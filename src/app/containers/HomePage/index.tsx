@@ -22,12 +22,34 @@ const PageContainer = styled.div`
     `}
 `;
 
+const NoteContainer = styled.div`
+  ${tw`
+    flex
+    flex-col
+    items-center
+    mb-10
+    `}
+`;
+
+const Note = styled.div`
+  ${tw`
+  text-gray-500
+  ml-6
+  mr-auto
+  `}
+`;
+
 export function HomePage() {
   return (
-    <PageContainer id='outer-container'>
+    <PageContainer id="outer-container">
       <Navbar />
       <TopSection />
       {/* <Marginer direction="vertical" margin="2em" /> */}
+      <NoteContainer>
+        <Note>⚠️&nbsp;Note: </Note>
+        <Note>This is an ongoing project. </Note>
+        <Note> Not all components are functional by now.</Note>
+      </NoteContainer>
       <BookCard />
       <Marginer direction="vertical" margin="5em" />
       <BookingSteps />
