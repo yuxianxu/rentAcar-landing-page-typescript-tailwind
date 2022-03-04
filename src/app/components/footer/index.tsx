@@ -181,8 +181,9 @@ export function Footer() {
         <AboutContainer>
           <Logo color="white" bgColor="dark" />
           <AboutText>
-            Yourcar is a car renting and selling company located in many
-            countries across
+            RentAcar is a car renting and selling company located in many
+            countries across the world which has high quality cars and top rated
+            service.
           </AboutText>
         </AboutContainer>
         <BottomInfoContainer>
@@ -244,7 +245,7 @@ export function Footer() {
                 <RedIcon>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </RedIcon>
-                <SmallText>info@yourcar.com</SmallText>
+                <SmallText>info@rentacar.com</SmallText>
               </HorizontalContainer>
             </SectionContainer>
           </BottomContactContainer>

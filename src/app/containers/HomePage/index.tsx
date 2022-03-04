@@ -31,11 +31,11 @@ export function HomePage() {
       <BookCard />
       <Marginer direction="vertical" margin="5em" />
       <BookingSteps />
-      <Marginer direction="vertical" margin="8em" />
+      <Marginer direction="vertical" margin="4em" />
       <AboutUs />
       <Marginer direction="vertical" margin="8em" />
       <TopCars />
-      <Marginer direction="vertical" margin="8em" />
+      {/* <Marginer direction="vertical" margin="8em" /> */}
 
       <Footer />
       <ScrollToTop />

@@ -112,7 +112,7 @@ export default function BookingSteps() {
           </Step>
           <StepTitle>Choose Location</StepTitle>
           <StepDescription>
-            Find the nearest Yourcar point and book your car.
+            Find the nearest rentAcar point and book your car.
           </StepDescription>
         </StepContainer>
         <StepContainer>
