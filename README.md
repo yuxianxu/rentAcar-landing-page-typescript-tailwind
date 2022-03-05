@@ -71,6 +71,7 @@ RentAcar is a responsive landing page sample created by typescript and tailwind 
 
 
 ## Getting Started
+---
 
 - clone this repo
 - npm i
