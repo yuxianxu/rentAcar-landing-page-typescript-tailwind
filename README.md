@@ -1,6 +1,6 @@
 # rentAcar
 
-RentAcar is a responsive landing page sample created by typescript and tailwind css.
+RentAcar is a responsive landing page sample, which was created by typescript and tailwind css.
 
 ## Live Demo
 
