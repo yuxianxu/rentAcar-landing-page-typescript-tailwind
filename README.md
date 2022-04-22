@@ -82,5 +82,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## More
 
-This project is a coding exercise followed the CoderOne's Youtube channel and modified by Yuxian Xu. 
+This project is an exercise followed the CoderOne's Youtube channel and modified by Yuxian Xu. 
 
