@@ -23,14 +23,15 @@ RentAcar is a responsive landing page sample, which was created by typescript an
 
 ## Features
 
-#### About us
+- About us
 
-#### Services
+- Services
 
-#### Top Cars
+- Top Cars
 
-#### Book Steps
-#### Contact Info
+- Book Steps
+
+- Contact Info
 
 ## More Screenshots
 
