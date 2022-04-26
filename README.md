@@ -78,10 +78,10 @@ RentAcar is a responsive landing page sample, which was created by typescript an
 - npm i
 - npm start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
 
 
 ## More
 
-This project is an exercise followed the CoderOne's Youtube channel and modified by Yuxian Xu. 
+This project is an exercise followed the CoderOne's Youtube channel and modified by Yuxian Xu
 
